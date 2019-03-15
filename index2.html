@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="index2.css">
+	<title>Bienvenido(a)</title>
+</head>
+<body>
+<ul id="nav">
+	<li class="home"><a href="index2.html">Inicio</a></li>
+	<li class="tutorials"><a href="Formularioadministrador.html">Nuevo usuario</a></li>
+	<li class="about"><a href="Calendario.html">Calendario</a></li>
+	<li class="news"><a href="Cinema.html">Nueva película</a></li>
+	<li class="contact" onclick="salir()"><a href="#">Salir</a></li>
+</ul>
+<br>
+<p>Bienvenidos al cine</p>
+<img src="Cine.jpeg">
+</body>
+<script type="text/javascript">
+var revision=JSON.parse(localStorage.getItem('usuariologueado'))
+if(revision==null){
+	alert("No se ha logueado");
+	location.href="login.html";
+}
+else{
+	alert("Logueado correctamente")
+}
+function salir(){
+	localStorage.removeItem('usuariologueado');
+	location.href="login.html";
+}
+</script>
+</html>
