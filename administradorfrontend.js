@@ -22,7 +22,7 @@ Guardar() {
       try {
            
                var xhr = new XMLHttpRequest();
-xhr.open('POST', 'http://localhost:8080/api/nuevoadministrador');
+xhr.open('POST', 'https://cinema-de-sebastian-jimenez.herokuapp.com/api/nuevoadministrador');
 xhr.setRequestHeader('Content-Type', 'application/json');
 xhr.onload = function() {
     if (xhr.status === 200) {
@@ -55,7 +55,7 @@ catch(err) {
       
       try {
            var xhr = new XMLHttpRequest();
-xhr.open('POST', '/api/Login');
+xhr.open('POST', 'https://cinema-de-sebastian-jimenez.herokuapp.com/api/Login');
 xhr.setRequestHeader('Content-Type', 'application/json');
 xhr.onload = function() {
     if (xhr.status === 200) {

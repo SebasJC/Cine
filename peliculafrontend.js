@@ -40,7 +40,7 @@ Guardar() {
       try {
            
                var xhr = new XMLHttpRequest();
-xhr.open('POST', 'http://localhost:8080/api/Nuevapelicula');
+xhr.open('POST', 'https://cinema-de-sebastian-jimenez.herokuapp.com/api/Nuevapelicula');
 xhr.setRequestHeader('Content-Type', 'application/json');
 xhr.onload = function() {
     if (xhr.status === 200) {
@@ -73,7 +73,7 @@ catch(err) {
       try {
            
                var xhr = new XMLHttpRequest();
-xhr.open('POST', 'http://localhost:8080/api/modificarpelicula');
+xhr.open('POST', 'https://cinema-de-sebastian-jimenez.herokuapp.com/api/modificarpelicula');
 xhr.setRequestHeader('Content-Type', 'application/json');
 xhr.onload = function() {
     if (xhr.status === 200) {
@@ -108,7 +108,7 @@ catch(err) {
       try {
            
                var xhr = new XMLHttpRequest();
-xhr.open('POST', 'http://localhost:8080/api/Eliminapelicula');
+xhr.open('POST', 'https://cinema-de-sebastian-jimenez.herokuapp.com/api/Eliminapelicula');
 xhr.setRequestHeader('Content-Type', 'application/json');
 xhr.onload = function() {
     if (xhr.status === 200) {
@@ -142,7 +142,7 @@ Seleccionartodos() {
       try {
            
                var xhr = new XMLHttpRequest();
-xhr.open('POST', 'http://localhost:8080/api/seleccionartodos');
+xhr.open('POST', 'https://cinema-de-sebastian-jimenez.herokuapp.com/api/seleccionartodos');
 xhr.setRequestHeader('Content-Type', 'application/json');
 xhr.onload = function() {
     if (xhr.status === 200) {
@@ -177,7 +177,7 @@ catch(err) {
       try {
            
                var xhr = new XMLHttpRequest();
-xhr.open('POST', 'http://localhost:8080/api/seleccionarporfecha');
+xhr.open('POST', 'https://cinema-de-sebastian-jimenez.herokuapp.com/api/seleccionarporfecha');
 xhr.setRequestHeader('Content-Type', 'application/json');
 xhr.onload = function() {
     if (xhr.status === 200) {
@@ -212,7 +212,7 @@ catch(err) {
       try {
            
                var xhr = new XMLHttpRequest();
-xhr.open('POST', 'http://localhost:8080/api/seleccionarporid');
+xhr.open('POST', 'https://cinema-de-sebastian-jimenez.herokuapp.com/api/seleccionarporid');
 xhr.setRequestHeader('Content-Type', 'application/json');
 xhr.onload = function() {
     if (xhr.status === 200) {
@@ -248,7 +248,7 @@ catch(err) {
       try {
            
                var xhr = new XMLHttpRequest();
-xhr.open('POST', 'http://localhost:8080/api/seleccionarpornombre');
+xhr.open('POST', 'https://cinema-de-sebastian-jimenez.herokuapp.com/api/seleccionarpornombre');
 xhr.setRequestHeader('Content-Type', 'application/json');
 xhr.onload = function() {
     if (xhr.status === 200) {
@@ -283,7 +283,7 @@ peliculapormesyanno(mes,anno)
       try {
            
                var xhr = new XMLHttpRequest();
-xhr.open('POST', 'http://localhost:8080/api/seleccionapelicula');
+xhr.open('POST', 'https://cinema-de-sebastian-jimenez.herokuapp.com/api/seleccionapelicula');
 xhr.setRequestHeader('Content-Type', 'application/json');
 xhr.onload = function() {
     if (xhr.status === 200) {
